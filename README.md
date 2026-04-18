@@ -17,6 +17,11 @@ This repository collects my hands-on Azure labs focused on identity, compute, ne
 - RSV - Worksapce
 - Functions
 
-## Goal
+###Compute
+- [VM deploy](Labs/Compute/vm-lab/README.md)
+
+
+
+##### Goal
 Show practical Azure skills through step-by-step labs, commands, troubleshooting notes, and architecture explanations.
 
