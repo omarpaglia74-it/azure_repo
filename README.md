@@ -17,4 +17,6 @@ This repository collects my hands-on Azure labs focused on identity, compute, ne
 - RSV - Worksapce
 - Functions
 
+## Goal
+Show practical Azure skills through step-by-step labs, commands, troubleshooting notes, and architecture explanations.
 
