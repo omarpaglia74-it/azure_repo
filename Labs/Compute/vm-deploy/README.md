@@ -8,6 +8,7 @@ Deployare una VM mediante CLI.
 ## Prerequisiti
 - Azure sub
 - Azure CLI
+- Azure Storage della Shell
 - Resource Group
 
 ## Steps VM Linix
@@ -24,6 +25,12 @@ Deployare una VM mediante CLI.
 4. Deployare VM Window con PIP
 5. Testare l'accesso e le funzionalità mediante Web Connect
 6. Pulire il lab
+
+## Steps deployare VM Microsoft mediante template json e CLI
+1. Caricare il template nello storage della Shell
+2. Creare un RG
+3. Usare la CLI per deployare passando i parametri necessari:
+4. RG - userAdmin -  passwordAdmin - 
 
 ## Commands
 
@@ -81,3 +88,12 @@ Tenendo conte che la URN è composta da Publisher:Offer:Sku:Version posso comple
 
 - Ultimo punto pulisco il lab cancellando il resource group
 - az group delete --name RGLab -y
+
+## NOTE
+- Nella directory templates è presente un file json con cui procedere al deploy mediante template
+
+## Deploy da template
+- Fare upload del template quindi creare il RG e deployare
+- az group create --name lab01 --location westeurope
+- az deployment group create --template-file template_vm_2019datacenter_ver2.json --resource-group lab01
+
