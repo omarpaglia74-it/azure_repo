@@ -1,7 +1,7 @@
 </> Markdown
-#Azure Labs
+##Azure Labs
 
-This repository collects my hands-on Azure labs focused on identity, compute, networking, storage, and administration.
+#This repository collects my hands-on Azure labs focused on identity, compute, networking, storage, and administration.
 
 ## Included labs
 - Vms - Vnet - Storage - NSG
@@ -20,8 +20,10 @@ This repository collects my hands-on Azure labs focused on identity, compute, ne
 ###Compute
 - [VM deploy](Labs/Compute/vm-lab/README.md)
 
-
+###Bicep/Arm json Deploy
+- Each section includes a Bicep deployment example for a different Azure resource, service or archtecture component
 
 ##### Goal
 Show practical Azure skills through step-by-step labs, commands, troubleshooting notes, and architecture explanations.
+
 
