@@ -18,10 +18,11 @@
 - Functions
 
 ###Compute
-- [VM deploy](Labs/Compute/vm-lab/README.md)
+- [VM deploy](Labs/Compute/vm-deploy/README.md)
 
 ###Bicep/Arm json Deploy
 - Each section includes a Bicep deployment example for a different Azure resource, service or archtecture component
+- [Vnet Deploy](Labs/Networking/Bicep/Deploy_Vnet_2Subs_NSG/README.md)
 
 ##### Goal
 Show practical Azure skills through step-by-step labs, commands, troubleshooting notes, and architecture explanations.
