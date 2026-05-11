@@ -13,4 +13,4 @@
 
 ##Deployment Screenshot
 
-![Deployment screenshot](./Image/Vet_2Subs_NSG.png)
+![Deployment screenshot](./Image/Vnet_2Subs_NSG.png)
