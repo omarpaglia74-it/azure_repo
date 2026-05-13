@@ -11,7 +11,7 @@
 
 #I file sono i seguenti
 -[Template Bicep](./Template/Vnet_NSG.bicep)
--[Tempalte JSon].(./Template/Vnet_NSG.json)
+-[Tempalte JSon](./Template/Vnet_NSG.json)
 
 #Lo Schema
 ?[Schema del Deploy](./Image/Vnet_2Subs_NSG.png)
