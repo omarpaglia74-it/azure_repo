@@ -21,7 +21,7 @@
 - [VM deploy](Labs/Compute/vm-deploy/README.md)
 
 ###Monitoring
-- [Monitor Deploy](Labs/Monitor/monitor.md)
+- [Monitor Deploy](Labs/Monitoring/monitor.md)
 
 ###Bicep/Arm json Deploy
 - Each section includes a Bicep deployment example for a different Azure resource, service or archtecture component
