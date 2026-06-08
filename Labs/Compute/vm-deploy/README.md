@@ -97,3 +97,9 @@ Tenendo conte che la URN è composta da Publisher:Offer:Sku:Version posso comple
 - az group create --name lab01 --location westeurope
 - az deployment group create --template-file template_vm_2019datacenter_ver2.json --resource-group lab01
 
+## Deploy mediante CLI
+- Creare il RG destinatario della VM:
+- az group create --name <Nome Gruppo> --location <Nome Location>
+- Tenendo conto della URN procedere alla creazione:
+- az vm create -n <Nome VM> -g <RG> --image MicrosoftWindowsServer:WindowsServer:2019-Datacenter:Latest --size <Size della VM es Standard_A2_v2> --admin-username <admin username> --admin-password <admin password> --location <location scelta>
+- Capisco che esporre utente e pass è un grosso problema di sicurezza ma per un lab può andar bene
