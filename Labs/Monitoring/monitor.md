@@ -1,7 +1,7 @@
-###Monitor Deploy
+### Monitor Deploy
 
-##In Questo Lab verrà deployata un VM ed un Monitor per controllare le metriche della VM
-##Attiveremo l'agent sulla VM
+## In Questo Lab verrà deployata un VM ed un Monitor per controllare le metriche della VM
+## Attiveremo l'agent sulla VM
 
 - Effettuo il Deploy della VM accertandomi dell'URN, in questo lab usero Win Datacenter 2019:
 - az vm create -n <VM name> -g <RG> --image MicrosoftWindowsServer:WindowsServer:2019-Datacenter:Latest --size  <il size ad esempio Standard_A2_v2> --admin-username <local_admin> --admin-password <password> --location <location>
@@ -37,9 +37,9 @@
 - Controllimao se la DCR sia stata creata
 - az monitor data-collection rule list --resource-group <RG> -o table
 
-### A questo punto emerge un problema ovvero i dati non vengono passati al workspace
-### I dati non arrivano anche se l'agent è installato, il workspace è presente così come la DCR e l'associazione al log analytics.
-### In sostanza quello che manca è il system-assigned Managed Identity alla VM che possa essere usato dall'agent per poter avere accesso al log analytics
+# A questo punto emerge un problema ovvero i dati non vengono passati al workspace
+# I dati non arrivano anche se l'agent è installato, il workspace è presente così come la DCR e l'associazione al log analytics.
+# In sostanza quello che manca è il system-assigned Managed Identity alla VM che possa essere usato dall'agent per poter avere accesso al log analytics
 
 - Per evitare questo problema le strade sono due o si attiva nel deploy della VM stessa
 - ... --assign-identity  // Questa è l'opzione da aggiungere nel momento del deploy
