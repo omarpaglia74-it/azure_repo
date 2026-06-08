@@ -20,6 +20,9 @@
 ###Compute
 - [VM deploy](Labs/Compute/vm-deploy/README.md)
 
+###Monitoring
+- [Monitor Deploy]
+
 ###Bicep/Arm json Deploy
 - Each section includes a Bicep deployment example for a different Azure resource, service or archtecture component
 - [Vnet Deploy](Labs/Networking/Bicep/Deploy_Vnet_2Subs_NSG/README.md)
