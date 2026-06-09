@@ -4,7 +4,7 @@
 ## Attiveremo l'agent sulla VM
 
 - Effettuo il Deploy della VM accertandomi dell'URN, in questo lab usero Win Datacenter 2019:
-- az vm create -n <VM name> -g <RG> --image MicrosoftWindowsServer:WindowsServer:2019-Datacenter:Latest --size  <il size ad esempio Standard_A2_v2> --admin-username <local_admin> --admin-password <password> --location <location>
+- az vm create -n <VM_name> -g <RG_name> --image MicrosoftWindowsServer:WindowsServer:2019-Datacenter:Latest --size  <il size ad esempio Standard_A2_v2> --admin-username <local_admin> --admin-password <passw0rd> --location <location>
 
 - Verifica della presenza dell'Agent sulla VM Microsoft
 - az vm extension list -g <RG> --vm-name <VM> -o table
