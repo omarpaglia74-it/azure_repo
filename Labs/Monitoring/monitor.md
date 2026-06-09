@@ -48,7 +48,23 @@
 - In realtà può essere attivata anche dal portale di azure VM->Security->Identity quindi impostare lo status su on
 
 ## Controllo arrivo dei dati nel WorkSpace
+- Da Log Analytics nella sezione query kusto:
+- Perf
+- where TimeGenerated > ago(1h)
+- project TimeGenerated, Computer, ObjectName, CounterName, CounterValue
+- take 20
+- Se tutto funziona correttamente dovrebbero visualizzarsi dei record
 
+## Invio delle metriche ache a Azure Monitor oltre che a Log Analytics
+- ATTENZIONE FATTA QUESTA MODIFICA CHE AGGIUNGERE UNA DESTINAZIONE ALLA DCR
+- LA STESSA NON POTRA' PIù ESSERE GESTITA DAL PORTALE STESSO
+- Mediante portale su Log Analytics WorkSpace
+- Azure Monitor
+- -> Data Collection Rules -> seleziona la DCR -> Data Sources / Collect and deliver -> Performance Counters -> aggiungi/modifichi 
+- Destination aggiungendo Azure Monitr Metrics
 
+### ATTENZIONE QUESTO TEMPLATE è DA TESTARE
+- Ovviamente questa configuraizone può essere messa in essere deployando da un template che preveda le due destination
+- az deployment group create --resource-group "RG" --template-file DCR_WorkSpaceMonitor.bicep --parameters vmName=VM1 dcrName=dcr-vm1-windows-perf-law
 
 
