@@ -62,9 +62,18 @@
 - Azure Monitor
 - -> Data Collection Rules -> seleziona la DCR -> Data Sources / Collect and deliver -> Performance Counters -> aggiungi/modifichi 
 - Destination aggiungendo Azure Monitr Metrics
-
-### ATTENZIONE QUESTO TEMPLATE è DA TESTARE
 - Ovviamente questa configuraizone può essere messa in essere deployando da un template che preveda le due destination
 - az deployment group create --resource-group "RG" --template-file DCR_WorkSpaceMonitor.bicep --parameters vmName=VM1 dcrName=dcr-vm1-windows-perf-law
 
+- Dopo qualche minuto è possibile controllare l'arrivo dei dati andando sul workspace
+- quindi su Log ed eseguendo le seguenti query di esempio:
 
+- Perf | where Computer has "VM1" | sort by TimeGenerated desc
+
+- Perf | where TimeGenerated > ago(2h) | take 20
+
+- Heartbeat | where TimeGenerated > ago(4h) | summarize Count=count() by Computer, OSType, ResourceGroup, _ResourceId | order by Count desc
+
+- Perf | where TimeGenerated > ago(2h) | take 20
+
+- Le tabelle dovrebbero popolarsi di dati, si ricorda di attendere qualche minuto.

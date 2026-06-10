@@ -1,8 +1,4 @@
-@description('Questo file Bicep crea una Data Collection Rule (DCR) per monitorare le performance di una macchina virtuale Windows ')
-@description('e inviare i dati a un Log Analytics Workspace. La DCR raccoglie contatori di performance come l\'utilizzo della CPU, la memoria disponibile e lo spazio libero su disco,') 
-@description('e li invia sia al Log Analytics Workspace che ad Azure Monitor Metrics.')
-
-@description('Il file include anche associazione della DCR alla macchina virtuale, consentendo la raccolta dei dati di performance in tempo reale.')
+@description('Questo file Bicep crea una Data Collection Rule (DCR) per monitorare le performance di una macchina virtuale Windows e inviare i dati a un Log Analytics Workspace. La DCR raccoglie contatori di performance come l\'utilizzo della CPU, la memoria disponibile e lo spazio libero su disco, e li invia sia al Log Analytics Workspace che ad Azure Monitor Metrics.Il file include anche associazione della DCR alla macchina virtuale, consentendo la raccolta dei dati di performance in tempo reale.')
 param location string = resourceGroup().location
 param dcrName string = 'dcr-vm1-windows-perf-law'
 param vmName string = 'VM1'
