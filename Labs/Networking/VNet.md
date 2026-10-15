@@ -16,7 +16,7 @@
 - az network vnet subnet update -g "Nome Gruppo"  -n "Nome Subnet"  --vnet-name "Nome Vnet"  --network-security-group "No me NSG" 
 
 ##Cancellare una sub
-- az network subgnet delete --name "Nome Sub"  --resourge-group "Nome gruppo"  --vnet-name "Nome vnet" 
+- az network subnet delete --name "Nome Sub"  --resourge-group "Nome gruppo"  --vnet-name "Nome vnet" 
 
 ##Cancellare una VNet
 - az network vnet delete -g "Nome Gruppo"  -n "Nome Vnet" 
