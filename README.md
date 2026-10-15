@@ -4,7 +4,7 @@
 #This repository collects my hands-on Azure labs focused on identity, compute, networking, storage, and administration.
 
 ## Included labs
-- [Vms](./Compute/vm-deploy/VMS.md) - Vnet - Storage - NSG
+- [Vms](Labs/Compute/vm-deploy/VMS.md) - Vnet - Storage - NSG
 - Peering
 - DNS 
 - VM Scale Sets
